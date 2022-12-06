@@ -1,0 +1,356 @@
+img{
+    object-fit: cover;
+}
+a{ font-weight: 400; }
+
+a:hover{ color: #b831cf; }
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle{
+    background-color: #117a8b !important;
+}
+
+/* sidebar */
+.sidebar-wrapper .sub-nav{
+    background-color: #28324a;
+}
+
+.sidebar-wrapper .sub-sub-nav{
+    background-color: #39435a;
+}
+/* end sidebar */
+
+/* login page */
+.login-page .card-login .card-body .input-group .form-control{
+    padding: 10px !important;
+}
+/* end login page */
+
+select option{
+    color: #000 !important;
+    background: transparent !important;
+}
+
+/* backend tables */
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting{
+    font-size: 13px;
+    background: #2e364c;
+    transition: all .5s ease;
+}
+
+.dark-edition .table > tbody > tr > td, .dark-edition .table > tbody > tr > th, .dark-edition .table > tfoot > tr > td, .dark-edition .table > tfoot > tr > th, .dark-edition .table > thead > tr > td, .dark-edition .table > thead > tr > th{
+    color: #d8e1ff !important;
+    font-size: 13px;
+}
+
+.card-stats .card-header .card-category:not([class*="text-"]), .card .card-header.card-header-icon .card-title, .card .card-header.card-header-text .card-title{
+    color: #ffffff!important;
+}
+.card .card-footer .stats { color: #c5c4c4 !important; }
+
+#datatables_wrapper .row:first-child {
+    padding: 0.2rem 1rem;
+}
+
+.user-role .table.dataTable thead > tr > th.sorting{
+    padding-right: 0;
+}
+.dark-edition .user-role .table > thead > tr > th{
+    padding: 0px;
+}
+
+.tim-row {
+  margin-bottom: 20px;
+}
+
+.tim-white-buttons {
+  background-color: #777777;
+}
+
+.typography-line {
+  padding-left: 25%;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.typography-line span {
+  bottom: 10px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  left: 0;
+  position: absolute;
+  width: 260px;
+  text-transform: none;
+}
+
+.tim-row {
+  padding-top: 60px;
+}
+
+.tim-row h3 {
+  margin-top: 0;
+}
+
+.tim-typo {
+  padding-left: 25%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.tim-typo .tim-note {
+  bottom: 5px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  left: 0;
+  margin-left: 20px;
+  position: absolute;
+  width: 260px;
+}
+
+.offline-doc .pro-badge {
+  position: absolute;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  right: -30px;
+  padding: 10px 18px;
+  top: -30px;
+  background: #ffffff;
+  border-radius: 3px;
+  color: #444444;
+  line-height: 22px;
+  box-shadow: 0 5px 5px -2px rgba(31, 31, 31, 0.4);
+}
+
+.offline-doc .navbar-minimize {
+  display: none;
+}
+.card .card-footer .stats { 
+    color: #c5c4c4 !important;
+ }
+
+ .perfect-scrollbar-on .main-panel, .perfect-scrollbar-on .sidebar{
+     transition: all .5s ease;
+ }
+
+/* day/night button */
+
+ /* .main-panel .theme-btn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+} */
+ .main-panel .theme-btn input,
+ .sidebar-wrapper .theme-btn input {
+    display: none;
+}
+ .main-panel .theme-btn input + label,
+ .sidebar-wrapper .theme-btn input + label {
+    display: block;
+    position: relative;
+    width: 53px;
+    height: 22px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding: 10px;
+    background: rgb(169 169 169 / 70%);
+    border-radius: 60px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+ .main-panel .theme-btn input + label:before,
+ .sidebar-wrapper .theme-btn input + label:before {
+    content: "";
+    display: inherit;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 17px;
+    height: 18px;
+    background: #fff;
+    border-radius: inherit;
+    box-shadow: 0 0 65px rgba(255, 255, 255, 0.5);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.main-panel .theme-btn input:checked + label,
+.sidebar-wrapper .theme-btn input:checked + label {
+    background: rgb(0 0 0 / 46%);
+}
+ .main-panel .theme-btn input:checked + label:before,
+ .sidebar-wrapper .theme-btn input:checked + label:before {
+    left: 34px;
+    background: #fdc472;
+    box-shadow: 0 0 65px rgba(253, 196, 114, 0.5);
+}
+.main-panel .theme-chng p,
+.sidebar-wrapper .theme-chng p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.main-panel .card{
+    transition: all .5s ease;
+    border: none;
+}
+.main-panel-light .theme-chng p {
+    color: #000 !important;
+}
+.sidebar-wrapper .theme-btn{
+    transform: translateX(-100%);
+    margin-left: -5px;
+    margin-top: 10px;
+  }
+  .sidebar-wrapper .theme-chng p {
+      color: #fff !important;
+      transform: translateX(105%);
+      margin-top: 6px;
+  }
+
+
+ /* day/light mode */
+ .main-panel-light{
+     /* background-color: #f3f9ff; */
+     background-color: #ecf0f1;
+ }
+ .main-panel-light .navbar-brand{
+    color: #666 !important;
+    font-weight: bold !important;
+ }
+ .main-panel-light .navbar .collapse .navbar-nav .nav-item .nav-link{
+    color: #666 !important;
+    font-weight: 400;
+    background-color: #dddddd5e !important;
+ }
+.dark-edition .main-panel-light .card {
+   background: #fff;
+   border: none;
+   box-shadow: 0px 3px 5px #b9b9b9;
+}
+.main-panel-light .card .card-footer .stats{
+    color: #000 !important;
+    font-weight: 400;
+}
+.main-panel-light rect.highcharts-plot-background{
+    fill: #fff !important;
+}
+.main-panel-light .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon{
+    background-color: #888;
+}
+.main-panel-light table.dataTable thead > tr > th.sorting_asc, 
+.main-panel-light table.dataTable thead > tr > th.sorting_desc, 
+.main-panel-light table.dataTable thead > tr > th.sorting, 
+.main-panel-light table.dataTable thead > tr > td.sorting_asc, 
+.main-panel-light table.dataTable thead > tr > td.sorting_desc, 
+.main-panel-light table.dataTable thead > tr > td.sorting{
+    /* background: #fff; */
+    background-color: #f7f8fc;
+    color: #000 !important;
+    font-weight: 400;
+    padding: 4px 8px !important;
+}
+.dark-edition .main-panel-light .table > tbody > tr > td, 
+.dark-edition .main-panel-light .table > tbody > tr > th, 
+.dark-edition .main-panel-light .table > tfoot > tr > td, 
+.dark-edition .main-panel-light .table > tfoot > tr > th, 
+.dark-edition .main-panel-light .table > thead > tr > td, 
+.dark-edition .main-panel-light .table > thead > tr > th{
+    color: #000 !important;
+    font-weight: 400;
+}
+
+.main-panel-light .card,
+.main-panel-light .card-stats .card-header .card-category:not([class*="text-"]), 
+.main-panel-light .card .card-header.card-header-icon .card-title, 
+.main-panel-light .card .card-header.card-header-text .card-title,
+.main-panel-light .md-form-group:not(.has-success):not(.has-danger) .md-label-floating,
+.main-panel-light .form-control,
+.main-panel-light .form-group .md-label-static,
+.main-panel-light .nav-pills .nav-item .nav-link,
+.main-panel-light .togglebutton, 
+.main-panel-light .togglebutton label, 
+.main-panel-light .togglebutton input, 
+.main-panel-light .togglebutton .toggle,
+.main-panel-light .bootstrap-select .dropdown-menu li a,
+.main-panel-light .bootstrap-select .dropdown-toggle .filter-option-inner-inner,
+.main-panel-light .dropdown-toggle:after,
+.main-panel-light div.dataTables_wrapper div.dataTables_length label,
+.dark-edition .main-panel-light .card .card-title
+.main-panel-light .modal-dialog .modal-title
+.main-panel-light .md-form-group .form-check-label, 
+.main-panel-light .md-form-group .checkbox label, 
+.main-panel-light .md-form-group .radio label, 
+.main-panel-light .md-form-group label,
+.main-panel-light .modal-dialog .modal-title{
+    color: #000 !important;
+    font-weight: 400;
+}
+.main-panel-light .container.countdown{
+    background: #f7f8fc;
+}
+.main-panel-light .countdown h3,
+.main-panel-light .countdown li{
+    color: #666;
+}
+.main-panel-light .countdown li span{
+    color: #333;
+    background: #0e235817;
+}
+.main-panel-light .bootstrap-select .dropdown-menu li a{
+    background-color: transparent !important;
+}
+.main-panel-light .bootstrap-select .dropdown-toggle .filter-option{
+    background: #efefef;
+    padding-left: 12px;
+}
+.main-panel-light .page-link{
+    color: #000 !important;
+    font-weight: bold;
+    /* background-color: #efefef; */
+}
+.main-panel-light .page-link:hover{
+    color: #9c27b0 !important;
+}
+.main-panel-light .page-item.disabled .page-link{
+    color: #666 !important;
+    background-color: #efefef;
+    font-weight: normal;
+}
+.main-panel-light .form-control, 
+.main-panel-light .is-focused .form-control{
+    border-bottom: 2px solid #cdcdcd7a;
+}
+.main-panel-light .footer .copyright a{
+    color: #444;
+}
+.main-panel-light .footer ul li a, .main-panel-light .footer .copyright{
+    color: #666;
+}
+.main-panel-light .modal .modal-dialog .modal-content {
+    background: #f4f6ff;
+}
+.main-panel-light input, 
+.main-panel-light select, 
+.main-panel-light optgroup, 
+.main-panel-light textarea{
+    border: none;
+    background-color: #f1f3f7 !important;
+    border-bottom: 1px solid #cbcbcb;
+    color: #000 !important;
+}
+.main-panel-light .card .card-title {
+    color: #000;
+    font-weight: 500;
+}
+ /* day/light mode --end--*/

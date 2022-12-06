@@ -1,0 +1,213 @@
+.container.countdown {
+    color: #ffffffa6;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    background: #202940;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+
+.countdown h3 {
+    display: inline-block;
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #8027a1;
+}
+
+.countdown ul {
+    padding-left: 0;
+}
+
+.countdown li {
+    display: inline-block;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.countdown li span {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 2.2;
+    width: 70px;
+    background: #ffffff29;
+    height: 70px;
+    margin-bottom: 6px;
+}
+
+.countdown .emoji {
+    display: none;
+    padding: .2rem;
+}
+
+.countdown .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+.countdown .emoji button {
+    border: none;
+    padding: .4rem 1.2rem;
+    background: #8C489F linear-gradient(180deg, #b164c7, #463368) repeat-x;
+    color: #ffffffc7;
+}
+
+.countdown .emoji button:focus {
+    outline: none;
+}
+
+.countdown .emoji button:hover {
+    box-shadow: 0px 2px 10px 0px #795187;
+}
+
+@media all and (max-width: 768px) {
+    .countdown h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+    .countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+    .countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+
+/* body {
+    font: normal 13px/20px Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    color: #eee;
+    background: #353535;
+}
+
+
+/* #countdown {
+    width: 465px;
+    height: 112px;
+    text-align: center;
+    background: #222;
+    background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -moz-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -ms-linear-gradient(top, #222, #333, #333, #222);
+    background-image: -o-linear-gradient(top, #222, #333, #333, #222);
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 24px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#countdown:before {
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: #444;
+    background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -ms-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -o-linear-gradient(top, #555, #444, #444, #555);
+    border: 1px solid #111;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: -10px;
+}
+
+#countdown:after {
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: #444;
+    background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -ms-linear-gradient(top, #555, #444, #444, #555);
+    background-image: -o-linear-gradient(top, #555, #444, #444, #555);
+    border: 1px solid #111;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: block;
+    position: absolute;
+    top: 48px;
+    right: -10px;
+}
+
+#countdown #tiles {
+    position: relative;
+    z-index: 1;
+}
+
+#countdown #tiles>span {
+    width: 92px;
+    max-width: 92px;
+    font: bold 48px 'Droid Sans', Arial, sans-serif;
+    text-align: center;
+    color: #111;
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(top, #bbb, #eee);
+    background-image: -moz-linear-gradient(top, #bbb, #eee);
+    background-image: -ms-linear-gradient(top, #bbb, #eee);
+    background-image: -o-linear-gradient(top, #bbb, #eee);
+    border-top: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    margin: 0 7px;
+    padding: 18px 0;
+    display: inline-block;
+    position: relative;
+}
+
+#countdown #tiles>span:before {
+    content: "";
+    width: 100%;
+    height: 13px;
+    background: #111;
+    display: block;
+    padding: 0 3px;
+    position: absolute;
+    top: 41%;
+    left: -3px;
+    z-index: -1;
+}
+
+#countdown #tiles>span:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    border-top: 1px solid #333;
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 0;
+}
+
+#countdown .labels {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+}
+
+#countdown .labels li {
+    width: 102px;
+    font: bold 15px 'Droid Sans', Arial, sans-serif;
+    color: #f47321;
+    text-shadow: 1px 1px 0px #000;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+} */

@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/thevoice/public_html/newsportal
+ - /bin/cp * $DEPLOYPATH
